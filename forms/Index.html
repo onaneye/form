@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+<section class="h-100 bg-dark">
+  <form action="">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+            <div class="row g-0">
+            <div class="col-md-6 d-none d-md-block">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                alt="Sample photo" class="img-fluid" width="0px" />
+            </div>
+            <div class="col-xl-12">
+              <div class="card-body p-md-5 text-black">
+                <h3 class="mb-5 text-uppercase">Student registration form</h3>
+                
+                <div class="row">
+                  <div class="d-flex justify-content-start align-items-center w-100 mb-4" id="image-preview">
+                    <div class="bg-light w-50 pic-file-upload d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center align-items-center style">
+                        <input type="file" id="file-upload" class="file-upload-input" accept="image/png, image/jpeg, image/jpg" />
+                        <label for="file-upload" class="file-upload-label">+</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              <!-- THis is the personal information -->
+              <!-- Section 1-->
+              
+                 <h4> 1. Personal information</h4>
+                 <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                       <label class="form-label" for="form3Example1m">Surname</label>
+                      <input type="text" id="form3Example1m" class="form-control form-control-lg" name="surname" required="" />
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                       <label class="form-label" for="form3Example1m">First name</label>
+                      <input type="text" id="form3Example1m" class="form-control form-control-lg" name="firstname" required>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                       <label class="form-label" for="form3Example1m">Other Names</label>
+                      <input type="text" id="form3Example1n" class="form-control form-control-lg" name="other-name" required />
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+                  <h6 class="mb-0 me-4">Gender: </h6>
+                  <div class="form-check form-check-inline mb-0 me-4">
+                    <input class="form-check-input" type="radio" name="female" id="femaleGender"
+                      value="option1" />
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
+              
+                  <div class="form-check form-check-inline mb-0 me-4">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                      value="option2" />
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
+              
+                </div>
+                
+                  <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                       <label class="form-check-label" for="date">Date Of Birth</label>    
+                      <input type="date" id="date" class="form-control" / name="date" required>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                       <label class="form-check-label" for="date">Marital Status</label>    
+                        <select class="select form-control" id="marital-status" required>
+                          <option value=""></option>
+                          <option value="single">Single</option>
+                          <option value="married">Married</option>
+                          <option value="divoced">Divoced</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="form-outline">
+                      <label class="form-check-label">Madien Name(Married women only)</label>
+                      <input type="text" id="madien" class="form-control "  />
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="row">
+                <div class="col-md-4 mb-4">
+                  <div class="form-inline">
+                    <label class="form-label" for="form3Example8">Nationality</label>
+                    <input type="text" id="natonality" class="form-control" / name="nationality" required>
+                  </div>
+                </div>
+              
+                  <div class="col-md-4 mb-4">
+                    <label class="form-label">State Of Origin</label>
+                      <input type="text" id="state" class="form-control" / name="state" required>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <label class="form-label">Local Govt.</label>
+                        <input type="text" id="local-gov" class="form-control"  name="local-govt" required/>
+                  </div>
+                </div>
+                
+              <div class="row">
+                  
+                <div class="col-md-4 mb-4">
+                  <div class="form-inline">
+                    <label class="form-label" for="form3Example8">E-mail</label>
+                    <input type="email" id="email" class="form-control" name="gmail" required placeholder="Your@gmail.com"/>
+                  </div>
+                </div>
+              
+                  <div class="col-md-4 mb-4">
+                    <label class="form-label">Phone-No</label>
+                      <input type="number" id="number" class="form-control"  name="phone-number" required=""/>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <label class="form-label">Contact Address</label>
+                        <input type="text" id="contact-address" class="form-control"  name="address" required/>
+                  </div>
+                </div>
+                
+                 <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                       <label class="form-label" for="form3Example1m1">Next of Kin</label>
+                      <input type="text" id="form3Example1m1" class="form-control form-control-lg"  name="next-of-kin" required/>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                       <label class="form-label" for="form3Example1m1">Address of next-of-kin</label>
+                      <input type="text" id="form3Example1n1" class="form-control form-control-lg"  name="kin-address" required/>
+                    </div>
+                  </div>
+                </div>
+                <hr><!--end -->
+                
+                <!-- Section 2-->
+                  <div class="row">
+                    <h4>2. Academic Information</h4><span>(Institutions attended with dates)</span>
+                        <table class="table table-bordered m-1">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Name Of Institution</th>
+                              <th scope="col">Year Of Entry</th>
+                              <th scope="col">Year Of Graduation</th>
+                              <th scope="col">Qualification</th>
+                            </tr>
+                          </thead>
+                          <tbody class="tbody">
+                           <tr>
+                             <th scope="row">1</th>
+                             <td><input type="text" id="name-of-school-attended" class="form-control " name="school-attended"/></td>
+                             <td><input type="number" id="year-entry" class="form-control" name="year-entry"/></td>
+                             <td><input type="number" id="year-graduated" class="form-control" name="year-graduated"/></td>
+                             <td>
+                               <select class="form-control" id="school-qualification" name="school-qualification">
+                                 <option value="">B.sc</option>
+                                 <option value="">M.sc</option>
+                                 <option value="">Phd</option>
+                                 <option value="">N.C.E</option>
+                                 <option value="">OND</option>
+                               </select>
+                             </td>
+                           </tr>
+                          </tbody>
+                        </table>
+                        <div class="d-flex justify-content-end">
+                          <button class="btn btn-success" type="button" id="row-one">Add Record</button>
+                        </div>
+                        <label class="form-label" for="certificate-upload">Please attach a copy of certificate /or and statement of results</label>
+                        <input type="file" class="form-control" id="certificate-upload" placeholder="Please attach a copy of certificate /or and statement of results" name="school-certificate" required/>
+                  </div>
+                  <hr><!-- end-->
+                  
+                  <div class="row">
+                    <h4>3. Record Of Employment</h4>
+                     <table class="table table-bordered m-1">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Name Of Employer</th>
+                              <th scope="col">Position Held</th>
+                              <th scope="col">Year Of Employment</th>
+                              <th scope="col">Year Of Resignation</th>
+                            </tr>
+                          </thead>
+                          <tbody class="tbody-employ">
+                            <tr>
+                              <th scope="row">1</th>
+                              <td><input type="text" id="name-of-employer" class="form-control"/></td>
+                              <td><input type="text" id="position-held" class="form-control"/></td>
+                              <td><input type="number" id="employment-date" class="form-control"/></td>
+                              <td><input type="number" class="form-control" id="employment-resign"/></td>
+                            </tr>
+                          </tbody>
+                     </table>
+                     <div class="d-flex justify-content-end">
+                          <button class="btn btn-success" type="button" id="row-two">Add Record</button>
+                        </div>
+                  </div>
+                  <hr> <!-- end-->
+                  
+                  <!-- section 4 -->
+                  <div class="row">
+                    <h4>4. Nature Of Sponsorship</h4>
+                      <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+                      <h6 class="mb-0 me-4">Who Sponsored You: </h6>
+                      <div class="form-check form-check-inline mb-0 me-4">
+                        <label class="form-check-label" for="femaleGender">Organization</label>
+                        <input class="form-check-input" type="checkbox" name="" id=""
+                          value="option1" />
+               
+                      </div>
+                  
+                      <div class="form-check form-check-inline mb-0 me-4">
+                         <label class="form-check-label" for="maleGender">Self</label>
+                        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id=""/>
+                      </div>
+                    </div>
+                  <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="sponsorName">Name of Sponsor:</label>
+                    <input type="text" id="sponsorName" name="sponsorName" class="form-control" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="sponsorAddress">Address of Sponsor:</label>
+                    <input type="text" id="sponsorAddress" name="sponsorAddress" class="form-control" required>
+                  </div>
+                </div>
+                <hr>
+                          
+                <!-- Physical Fitness Section -->
+                <h4>5. Physical Fitness</h4>
+                <p>Do You Have Any Physical Disabilites</p>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="fitness" id="fitYes" value="yes">
+                    <label class="form-check-label" for="fitYes">Yes</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="fitness" id="fitNo" value="no">
+                    <label class="form-check-label" for="fitNo">No</label>
+                  </div>
+                </div>
+                <div id="fitnessDetails" style="display: none;">
+                  <div class="form-group">
+                    <label for="fitnessDetailsInput">Specify Details:</label>
+                    <input type="text" id="fitnessDetailsInput" name="fitnessDetailsInput" class="form-control w-50" required>
+                  </div>
+                </div>         
+                
+                <div class="mb-3">
+                  <h4>6. Extra Activites</h4><span>(Hobbies or Sport)</span>
+                  <select class="form-control w-50">
+                    <option value="">Please select</option>
+                    <option value="football">Football</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="boxing">Boxing</option>
+                    <option value="music">Music</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+                 <h4>7. Declaration</h4>
+                <div class="">
+                  <label>I</label><input type="text" id="name-declaration" class="form-control w-50" name="name-declaration" required placeholder="Your fullname"/> <p>hereby declare that all information rendered in 
+                    this application is to the best of my knowledge adequate and correct. I am aware that any false and incomplete
+                    facts associated with applicants’ submissions will automatically result in their disqualification from admission 
+                    and/or continuing in the course of study.</p>
+                </div>
+                    
+                <div class="d-flex justify-content-end pt-3">
+                  <button type="submit" class="btn btn-success btn-lg ms-2" id="submit">Submit form</button>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </form>
+  </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <script src="app.js"></script>
+  </body>
+</html>
